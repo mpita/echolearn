@@ -68,6 +68,7 @@ THIRD_PARTY_APPS = []
 
 LOCAL_APPS = [
     "apps.home.apps.HomeAppConfig",
+    "apps.course.apps.CourseAppConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -155,3 +156,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static/")]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
