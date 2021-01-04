@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Echo Learn</title>
-</head>
-<body>
-  <h1>Welcome to Echo Learn</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="uk-section uk-section-secondary uk-light uk-height-1-1">
+    <div class="uk-container uk-text-center uk-padding">
+      <span class="uk-margin-small-right" uk-icon="icon: desktop; ratio: 2"></span>
+      <span class="uk-margin-small-right" uk-icon="icon: laptop; ratio: 2"></span>
+      <span class="uk-margin-small-right" uk-icon="icon: tablet; ratio: 2"></span>
+      <span class="uk-margin-small-right" uk-icon="icon: phone; ratio: 2"></span>
+      <h1 class="uk-heading-line">
+        <span class="uk-animation-scale-up">Welcome to Echo Learn</span>
+      </h1>
+    </div>
+  </div>
+{% endblock %}
