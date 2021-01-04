@@ -34,5 +34,5 @@ class Course(AppModel):
         super(Course, self).save(*args, **kwargs)
 
     def __str__(self):
-        """Rerutn the string representation of the object."""
+        """Return the string representation of the object."""
         return self.title
